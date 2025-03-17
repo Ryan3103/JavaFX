@@ -25,7 +25,7 @@ public class MainController {
             double libra = reais / libraCotacao;
             double peso = reais / pesoCotacao;
 
-            // Exibindo o resultado em um Alert
+
             Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("Conversão de Moeda");
             alert.setHeaderText(null);
