@@ -10,10 +10,9 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Carregar o arquivo FXML
+    
         VBox root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 
-        // Criar a cena e configurar o palco
         Scene scene = new Scene(root, 300, 200);
         primaryStage.setTitle("Simulador de Login");
         primaryStage.setScene(scene);
