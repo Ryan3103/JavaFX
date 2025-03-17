@@ -8,7 +8,7 @@ public class VerificadorPalindromoController {
     @FXML
     private TextField inputField;
 
-    // Método para verificar se a palavra/frase é um palíndromo
+
     @FXML
     public void verificarPalindromo(ActionEvent event) {
         String texto = inputField.getText().replaceAll("[^a-zA-Z]", "").toLowerCase(); // Remove não letras e coloca em minúsculas
@@ -21,7 +21,7 @@ public class VerificadorPalindromoController {
         alert.showAndWait();
     }
 
-    // Método para verificar se a string é um palíndromo
+
     private boolean isPalindromo(String texto) {
         StringBuilder reversed = new StringBuilder(texto).reverse();
         return texto.equals(reversed.toString());
