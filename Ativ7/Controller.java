@@ -11,7 +11,7 @@ public class VerificadorPalindromoController {
 
     @FXML
     public void verificarPalindromo(ActionEvent event) {
-        String texto = inputField.getText().replaceAll("[^a-zA-Z]", "").toLowerCase(); // Remove não letras e coloca em minúsculas
+        String texto = inputField.getText().replaceAll("[^a-zA-Z]", "").toLowerCase(); 
         boolean isPalindromo = isPalindromo(texto);
         
         Alert alert = new Alert(isPalindromo ? Alert.AlertType.INFORMATION : Alert.AlertType.ERROR);
